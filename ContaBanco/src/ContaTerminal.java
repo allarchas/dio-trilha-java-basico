@@ -6,6 +6,8 @@ public class ContaTerminal {
         //criando o objeto scanner
         Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
 
+        
+
         System.out.println("Por favor, digite o número da conta.");
         int conta = scanner.nextInt();
         
@@ -20,7 +22,8 @@ public class ContaTerminal {
         
         System.out.println("Digite seu saldo.");
         float saldo = scanner.nextFloat();
-
+        
+        scanner.close();
         
         //imprimindo os dados obtidos pelo usuario
         System.out.println("Olá " + nome + " " + sobrenome + ", obrigado por criar uma conta em nosso banco.");
